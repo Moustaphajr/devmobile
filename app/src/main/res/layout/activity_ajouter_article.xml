@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaire"
+    tools:context=".AjouterArticle">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SimpleBlog"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/primaire"
+        android:id="@+id/simple_blog"/>
+
+    <TextView
+        android:id="@+id/txAddArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un article"
+        android:textStyle="bold"
+        android:textColor="@color/primaire"
+        android:textSize="30dp"
+        android:layout_below="@+id/simple_blog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txAddArticle"
+        android:hint="Titre"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_arrondi"
+        android:id="@+id/inputTitle"
+        android:inputType="text"
+        android:textColor="@color/primaire"
+        android:backgroundTint="@color/tertiaire"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/inputTitle"
+        android:hint="Contenu"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        android:textColor="@color/primaire"
+        android:background="@drawable/input_arrondi"
+        android:layout_margin="20dp"
+        android:id="@+id/inputContent"
+        android:backgroundTint="@color/tertiaire"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Ajouter"
+        android:textColor="@color/tertiaire"
+        android:background="@color/primaire"
+        app:backgroundTint="@color/primaire"
+        android:layout_below="@id/inputContent"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/input_arrondi"
+        app:backgroundTint="@color/primaire"
+        app:tint="@color/tertiaire"
+        android:id="@+id/btn_close"/>
+
+</RelativeLayout>
